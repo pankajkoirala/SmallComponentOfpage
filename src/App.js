@@ -1,5 +1,5 @@
 import React from 'react';
-import Cheese from "./component/cheseContainer"
+import MoreLessButton from  "../src/component/lessAndmore/morelessButton"
 import './App.css';
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
   
-  <Cheese/>
+ <MoreLessButton/>
     </div>
   );
 }
