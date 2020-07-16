@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import a from "../asets/a.jpg";
+import a from "../../asets/a.jpg";
 import "./readLessMore.css"
 
 import jsonData from "./moreless.json";
@@ -41,7 +41,7 @@ let MoreLessButton = () => {
                 <CardBody>
                   <CardSubtitle>Card subtitle</CardSubtitle>
                   <CardText
-                    className={selectedId.includes(arg.id) ? "" : "less"}
+                    className= {selectedId.includes(arg.id) ? "more" : "less"}
                   >
                     {arg.detail}
                   </CardText>

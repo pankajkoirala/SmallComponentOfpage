@@ -1,4 +1,8 @@
 .less {
   height: 50px;
   overflow: hidden;
+  text-align: justify;
+}
+.more {
+  text-align: justify;
 }
