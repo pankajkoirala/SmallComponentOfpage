@@ -34,6 +34,7 @@ let MoreLessButton = () => {
         return (
           <div className="col-4">
             <div>
+   
               <Card>
                 <CardImg top width="100%" src={a} alt="Card image cap" />
                 {selectedId.includes(arg.id)}
@@ -44,6 +45,7 @@ let MoreLessButton = () => {
                     className= {selectedId.includes(arg.id) ? "more" : "less"}
                   >
                     {arg.detail}
+        
                   </CardText>
                   {selectedId.includes(arg.id) ?  (
                     <Button
@@ -65,7 +67,10 @@ let MoreLessButton = () => {
                       read more
                     </Button>
                   ) }
+                  
                 </CardBody>
+               
+
               </Card>
             </div>
           </div>

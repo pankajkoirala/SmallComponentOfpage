@@ -6,3 +6,8 @@
 .more {
   text-align: justify;
 }
+.checkclass {
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
