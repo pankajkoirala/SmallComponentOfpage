@@ -1,6 +1,25 @@
 .checkclass {
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 500px;
   width: 50%;
+  opacity: 0.6;
+  transition: width 2s, height 2s, transform 5s;
+}
+.checkclass:hover {
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(360deg);
+}
+
+.pk {
+  width: 100px;
+  height: 100px;
+  color: green;
+
+  margin-bottom: 10px;
+}
+.pk:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
