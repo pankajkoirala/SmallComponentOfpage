@@ -21,7 +21,11 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+        <Link to="/test1">test1</Link>
+        <Link to="/test2">test2</Link>
+        <Link to="/profile">profile</Link>
+
+      {/*<Navbar color="light" light expand="md">
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -46,7 +50,7 @@ const NavBar = (props) => {
           </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
-      </Navbar>
+  </Navbar>*/}
     </div>
   );
 };

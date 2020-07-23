@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import a from "../../asets/a.jpg";
 import "./readLessMore.css"
+import {token_key} from "../axiosConfig/constant/baseURL"
 
 import jsonData from "./moreless.json";
 import {
@@ -12,11 +13,10 @@ import {
   Button,
 } from "reactstrap";
 
-let MoreLessButton = () => {
+let MoreLessButton = (props) => {
   const [data, setData] = useState([]);
   const [selectedId, setSelectesId] = useState([]);
-  console.log(data);
-  console.log(selectedId);
+ 
 
   useEffect(() => {
     setData(jsonData);
@@ -29,7 +29,10 @@ let MoreLessButton = () => {
     setSelectesId(selectedId.filter((arg) => arg !== id));
   };
   return (
+    <div>
     <div className=" row h-100 w-100 ">
+   
+
       {data.map((arg) => {
         return (
           <div className="col-4">
@@ -76,6 +79,7 @@ let MoreLessButton = () => {
           </div>
         );
       })}
+    </div>
     </div>
   );
 };
