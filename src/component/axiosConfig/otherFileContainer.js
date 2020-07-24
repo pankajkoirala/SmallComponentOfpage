@@ -1,6 +1,7 @@
 import React from "react";
 import { read, create } from "../axiosConfig/axiosService";
 import { token_key } from "../axiosConfig/constant/baseURL";
+import { setLocalStorage} from "./constant/tokenStorage"
 
 let OtherFileContainer = () => {
   let login = () => {
@@ -12,7 +13,8 @@ let OtherFileContainer = () => {
       .then((res) => {
         console.log(res);
         console.log(res.data.data.token);
-        localStorage.setItem(token_key, res.data.data.token);
+       setLocalStorage(token_key, res.data.data.token);
+
       })
       .catch((err) => console.log(err));
   };

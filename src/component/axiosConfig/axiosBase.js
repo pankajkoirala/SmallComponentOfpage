@@ -1,10 +1,12 @@
 import React from "react"
 import axios from "axios"
+import { getLocalStorage} from "./constant/tokenStorage"
+
 import {base_URL,token_key} from "./constant/baseURL"
 
 let headers={ 'Content-Type': 'application/json'}
 if(localStorage.getItem(token_key)){
-  headers["x-auth-token"]=localStorage.getItem(token_key)
+  headers["x-auth-token"]=getLocalStorage(token_key)
 }
 console.log(headers);
 const axiosInstance= axios.create({
