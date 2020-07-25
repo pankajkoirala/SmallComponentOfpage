@@ -10,13 +10,14 @@ import Test1 from "../src/component/routerTest/test1";
 import Test2 from "../src/component/routerTest/test2";
 import Test3 from "../src/component/routerTest/test3";
 import Index from "./component/privateRouter/index";
+import HidenNavBar from "./component/hidenNavBar/navbar"
 
 function App() {
   return (
     <div className="App">
       <Router>
-        
-          <Index />
+        <HidenNavBar/>
+       
         
       </Router>
     </div>
@@ -28,6 +29,7 @@ export default App;
 
 {
   /* <OtherFileContainer/>
+     <Index />
 <NoticeModule />
 <Nav />
 <Switch>
