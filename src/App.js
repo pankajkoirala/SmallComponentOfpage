@@ -10,16 +10,17 @@ import Test1 from "../src/component/routerTest/test1";
 import Test2 from "../src/component/routerTest/test2";
 import Test3 from "../src/component/routerTest/test3";
 import Index from "./component/privateRouter/index";
-import HidenNavBar from "./component/hidenNavBar/navbar"
+import HidenNavBar from "./component/NavbarType/hiddenWlileScroleNavBar/navbar"
+import NestedRouter from "./component/nestedRouter/nestedRouter"
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <HidenNavBar/>
+     
+      <NestedRouter/>
        
         
-      </Router>
+     
     </div>
   );
 }
@@ -30,6 +31,7 @@ export default App;
 {
   /* <OtherFileContainer/>
      <Index />
+       <HidenNavBar/>
 <NoticeModule />
 <Nav />
 <Switch>
