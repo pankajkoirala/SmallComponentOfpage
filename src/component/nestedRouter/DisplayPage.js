@@ -38,7 +38,7 @@ const DisplayPage=(props)=>{
   return(
     <div> {detail.map((arg)=>{
       return(
-      <div>{arg.detail}</div>
+      <div className="bg-primary">{arg.detail}</div>
       )
     })} </div>
   )
