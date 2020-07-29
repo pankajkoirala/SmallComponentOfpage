@@ -19,13 +19,25 @@ import Slider from "react-slick";
 let p = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 let Rough = () => {
-  var settings = {
+  var settings = {}
+  
+if(window.innerWidth<768){
+  settings={
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow:2,
     slidesToScroll: 1,
-  };
+  }
+}else{
+  settings={
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow:4,
+    slidesToScroll: 1,
+  }
+}
   return (
     <Slider {...settings}>
       {p.map((arg) => {
