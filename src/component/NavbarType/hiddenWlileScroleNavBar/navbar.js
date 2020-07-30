@@ -3,16 +3,20 @@ import "./nav.css";
 
 const NavBar = () => {
   const [navPosition, setnavPosition] = useState("");
-
   var prevScrollpos = window.pageYOffset;
 
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
+   
     if (prevScrollpos > currentScrollPos) {
-      setnavPosition("active");
-    } else {
+      setnavPosition("active ok");
+    }else if(prevScrollpos === currentScrollPos){
+      setnavPosition("active ok")
+    }
+     else {
       setnavPosition("hidden");
     }
+    
     prevScrollpos = currentScrollPos;
   };
 
