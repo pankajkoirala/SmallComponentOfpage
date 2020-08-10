@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Table } from "reactstrap";
-import "../component/burger.css";
+import "./burger.css";
 
 let Cheese = () => {
   const [ches, setChes] = useState([]);
