@@ -12,13 +12,14 @@ import Test3 from "../src/component/routerTest/test3";
 import Index from "./component/privateRouter/index";
 import HidenNavBar from "./component/NavbarType/hiddenWlileScroleNavBar/navbar"
 import NestedRouter from "./component/nestedRouter/nestedRouter"
+import AutoSearch from "../src/component/autosearch"
 
 function App() {
   return (
     <div className="App">
      
-      <NestedRouter/>
-       
+ 
+       <AutoSearch/>
         
      
     </div>
@@ -31,6 +32,7 @@ export default App;
 {
   /* <OtherFileContainer/>
      <Index />
+          <NestedRouter/>
        <HidenNavBar/>
 <NoticeModule />
 <Nav />
